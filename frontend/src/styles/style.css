@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#eef6ff,#f7fbff);
+    color:#333;
+    min-height:100vh;
+}
+
+/* ---------------- NAVBAR ---------------- */
+
+.navbar{
+    background:linear-gradient(90deg,#2563eb,#0f766e);
+    padding:18px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.navbar h2{
+    color:white;
+    font-size:28px;
+    font-weight:600;
+}
+
+.navbar div{
+    display:flex;
+    gap:30px;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.navbar a:hover{
+    color:#ffe082;
+}
+
+.navbar .active{
+    color:#ffd54f;
+    font-weight:700;
+}
+
+/* ---------------- CONTAINER ---------------- */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:40px 0;
+}
+
+.container h1{
+    color:#1e3a8a;
+    margin-bottom:25px;
+}
+
+/* ---------------- FORM ---------------- */
+
+.form-container{
+
+    max-width:720px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    border-top:7px solid #2563eb;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
+
+}
+
+.form-container h2{
+
+    text-align:center;
+
+    color:#1e3a8a;
+
+    margin-bottom:25px;
+
+}
+
+.form-container label{
+
+    font-weight:600;
+
+    display:block;
+
+    margin-top:10px;
+
+}
+
+.form-container input,
+
+.form-container textarea,
+
+.form-container select{
+
+    width:100%;
+
+    padding:13px 15px;
+
+    margin-top:8px;
+
+    margin-bottom:18px;
+
+    border:1px solid #d5d5d5;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.form-container input:focus,
+
+.form-container textarea:focus,
+
+.form-container select:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 5px rgba(37,99,235,.25);
+
+    outline:none;
+
+}
+
+.form-container textarea{
+
+    resize:vertical;
+
+}
+
+/* ---------------- BUTTONS ---------------- */
+
+button{
+
+    width:100%;
+
+    background:linear-gradient(90deg,#2563eb,#0f766e);
+
+    color:white;
+
+    padding:13px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 18px rgba(37,99,235,.25);
+
+}
+
+/* ---------------- AI BOX ---------------- */
+
+.ai-box{
+
+    background:#eef6ff;
+
+    border-left:6px solid #2563eb;
+
+    border-radius:10px;
+
+    padding:18px;
+
+    margin:20px 0;
+
+}
+
+.ai-box h3{
+
+    color:#1d4ed8;
+
+    margin-bottom:10px;
+
+}
+
+.ai-box p{
+
+    margin:6px 0;
+
+}
+
+/* ---------------- SEARCH ---------------- */
+
+.search-box{
+
+    display:flex;
+
+    gap:15px;
+
+    margin:20px 0 30px;
+
+    flex-wrap:wrap;
+
+}
+
+.search-box input,
+
+.search-box select{
+
+    flex:1;
+
+    min-width:220px;
+
+}
+
+.search-box button{
+
+    width:150px;
+
+}
+
+/* ---------------- DASHBOARD ---------------- */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:22px;
+
+    margin-top:25px;
+
+}
+
+.card{
+
+    background:linear-gradient(180deg,#ffffff,#eef6ff);
+
+    border-left:6px solid #2563eb;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    text-align:center;
+
+    box-shadow:0 6px 15px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.card h3{
+
+    color:#555;
+
+    margin-bottom:12px;
+
+}
+
+.card h2{
+
+    color:#2563eb;
+
+    font-size:34px;
+
+}
+
+/* ---------------- TABLE ---------------- */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:30px;
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+table th{
+
+    background:linear-gradient(90deg,#2563eb,#0f766e);
+
+    color:white;
+
+    padding:15px;
+
+    text-align:left;
+
+}
+
+table td{
+
+    padding:15px;
+
+    border-bottom:1px solid #ececec;
+
+}
+
+table tr:hover{
+
+    background:#f5f9ff;
+
+}
+
+/* ---------------- ERROR ---------------- */
+
+.error{
+
+    color:#dc2626;
+
+    font-size:14px;
+
+    margin-top:-12px;
+
+    margin-bottom:15px;
+
+    font-weight:500;
+
+}
+
+/* ---------------- SUCCESS ---------------- */
+
+.success{
+
+    color:#059669;
+
+    font-weight:600;
+
+    margin-top:10px;
+
+}
+
+/* ---------------- FOOTER ---------------- */
+
+footer{
+
+    margin-top:50px;
+
+    padding:20px;
+
+    text-align:center;
+
+    color:#666;
+
+    font-size:14px;
+
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media(max-width:768px){
+
+.navbar{
+
+    flex-direction:column;
+
+    gap:15px;
+
+    padding:20px;
+
+}
+
+.navbar div{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.container{
+
+    width:95%;
+
+}
+
+.form-container{
+
+    padding:25px;
+
+}
+
+.cards{
+
+    grid-template-columns:1fr;
+
+}
+
+.search-box{
+
+    flex-direction:column;
+
+}
+
+.search-box button{
+
+    width:100%;
+
+}
+
+}
+
+.delete-btn{
+
+    background:#dc2626;
+
+    width:90px;
+
+    padding:8px 12px;
+
+    border:none;
+
+    color:white;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    transition:0.3s;
+
+}
+
+.delete-btn:hover{
+
+    background:#b91c1c;
+
+    transform:scale(1.05);
+
+}
+.search-box input,
+.search-box select {
+
+    margin: 8px;
+
+}
+
+.search-box button {
+
+    margin-left: 10px;
+
+}
